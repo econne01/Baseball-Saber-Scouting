@@ -12,3 +12,4 @@ Setup
 To get your workspace setup, clone this repo to your working environment, and run the following commands
 python bootstrap.py
 ./bin/buildout
+./bin/django syncdb
