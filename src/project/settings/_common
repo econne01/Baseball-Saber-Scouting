@@ -1,0 +1,7 @@
+DATABASE_ENGINE = 'sqlite3'
+DATABASE_NAME = '/tmp/saber_scout.db'
+INSTALLED_APPS = [
+	'saber_scout',
+	'project'
+]
+ROOT_URLCONF = ['project.urls']
