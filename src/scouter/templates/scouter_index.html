@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %} Home Crowd Baseball Analysis {% endblock title %}
+{% block page_description %} Scores and Summary for MLB games on Date {% endblock page_description %}
+{% block header_tags %}
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_ROOT }}C:/Users/Eric/projects/baseball_saber_scouting/src/project/media/static/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="C:\Users\Eric\projects\baseball_saber_scouting\src\project\media\static\css\main.css" />
+	
+{% endblock header_tags %}
+
+{% block body %}
+	<h1>
+		Baseball Saber Scouting
+	</h1>
+	<nav id='nav_menu'>
+		<ul>
+			<li class=''>
+				<a href='#'>Games</a>
+			</li>
+			<li class=''>
+				<a href='#'>Players</a>
+				<ul class='child-list'>
+					<li class=''>
+						<a href='#'>Batters</a>
+					</li>
+					<li class=''>
+						<a href='#'>Hitters</a>
+					</li>
+				</ul>
+			</li>
+			<li class=''>
+				<a href='#'>Contact</a>
+			</li>
+			
+		</ul>
+	</nav>
+	
+{% endblock body %}

@@ -13,3 +13,6 @@ To get your workspace setup, clone this repo to your working environment, and ru
 python bootstrap.py
 ./bin/buildout
 ./bin/django syncdb
+
+To test the app locally, you can use Django's built in server by using this command
+./bin/django runserver
