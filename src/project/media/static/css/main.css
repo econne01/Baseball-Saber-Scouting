@@ -1,0 +1,130 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* YOUR STYLES HERE  */
+/* Navigation */
+#nav_menu {
+	list-style: none;
+	font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+}
+
+/* CSS for each Parent Item */
+#nav_menu li
+{
+	clear: both;
+	height: 2em;
+}
+
+#nav_menu li a
+{
+	float: left;
+	display: block;
+	padding: 4px;
+	text-decoration: none;
+	color: #666;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+
+/* Change background color and font color of parent items when mouse hover */
+#nav_menu li:hover a,
+#nav_menu li a:hover
+{
+	background: #999;
+	color: #fff;
+}
+
+/* Applie to group of Child Items Each Child Item will be invisible by default */
+#nav_menu ul {display: none;}
+
+/* Each Child Item will be visible if mouse hover */
+#nav_menu li:hover ul {display: block;}
+
+#nav_menu ul
+{
+list-style: none;
+float: left;
+margin: 0;
+padding: 4px 8px;
+}
+
+#nav_menu ul li
+{
+float: left;
+clear: none;
+margin: 0;
+padding: 0;
+width: auto;
+height: auto;
+color: #999;
+}
+
+/* Reset and re style link of each child item */
+#nav_menu li:hover ul li a,
+#nav_menu ul li a
+{
+display: inline;
+padding: 0 6px 0 0;
+float: none;
+text-transform: lowercase;
+color: #999;
+background: none;
+}
+
+#nav_menu li:hover ul li a:hover,
+#nav_menu ul li a:hover
+{
+background: none;
+color: #000;
+}
+
