@@ -1,10 +1,10 @@
 {% extends "base.html" %}
+{% load url from future %}
 
 {% block title %} Home Crowd Baseball Analysis {% endblock title %}
 {% block page_description %} Scores and Summary for MLB games on Date {% endblock page_description %}
 {% block header_tags %}
-	<link rel="stylesheet" type="text/css" href="{{ STATIC_ROOT }}C:/Users/Eric/projects/baseball_saber_scouting/src/project/media/static/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="C:\Users\Eric\projects\baseball_saber_scouting\src\project\media\static\css\main.css" />
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css" />
 	
 {% endblock header_tags %}
 
@@ -12,27 +12,32 @@
 	<h1>
 		Baseball Saber Scouting
 	</h1>
-	<nav id='nav_menu'>
-		<ul>
-			<li class=''>
-				<a href='#'>Games</a>
-			</li>
-			<li class=''>
-				<a href='#'>Players</a>
-				<ul class='child-list'>
-					<li class=''>
-						<a href='#'>Batters</a>
-					</li>
-					<li class=''>
-						<a href='#'>Hitters</a>
-					</li>
-				</ul>
-			</li>
-			<li class=''>
-				<a href='#'>Contact</a>
-			</li>
-			
-		</ul>
-	</nav>
-	
+	<header>
+    	<nav id='nav_menu'>
+    	    <a href='#' title='homepage' id='logo'></a>
+    		<ul>
+    			<li class='menu_item_1'>
+    				<a href='#'>Games</a>
+    			</li>
+    			<li class='menu_item_1'>
+    				<a href='#'>Players</a>
+    				<ul class='child-list'>
+    					<li class='menu_item_2'>
+    						<a href='#'>Batters</a>
+    					</li>
+    					<li class='menu_item_2'>
+    						<a href='#'>Hitters</a>
+    					</li>
+    				</ul>
+    			</li>
+    			<li class='menu_item_1'>
+    				<a href='#'>Contact</a>
+    			</li>
+    			
+    		</ul>
+    	</nav>
+	</header>
+	<div id='container'>
+	    
+	</div>
 {% endblock body %}

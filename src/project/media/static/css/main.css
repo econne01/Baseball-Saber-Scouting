@@ -50,38 +50,38 @@ table {
 /* YOUR STYLES HERE  */
 /* Navigation */
 #nav_menu {
-	list-style: none;
-	font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
-	margin: 0;
-	padding: 0;
-	font-size: 1.2em;
+    list-style: none;
+    font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
 }
 
 /* CSS for each Parent Item */
 #nav_menu li
 {
-	clear: both;
-	height: 2em;
+    clear: both;
+    height: 2em;
 }
 
 #nav_menu li a
 {
-	float: left;
-	display: block;
-	padding: 4px;
-	text-decoration: none;
-	color: #666;
-	text-transform: uppercase;
-	margin-bottom: 5px;
-	margin-right: 10px;
+    float: left;
+    display: block;
+    padding: 4px;
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-right: 10px;
 }
 
 /* Change background color and font color of parent items when mouse hover */
 #nav_menu li:hover a,
 #nav_menu li a:hover
 {
-	background: #999;
-	color: #fff;
+    background: #999;
+    color: #fff;
 }
 
 /* Applie to group of Child Items Each Child Item will be invisible by default */
@@ -92,39 +92,38 @@ table {
 
 #nav_menu ul
 {
-list-style: none;
-float: left;
-margin: 0;
-padding: 4px 8px;
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 4px 8px;
 }
 
 #nav_menu ul li
 {
-float: left;
-clear: none;
-margin: 0;
-padding: 0;
-width: auto;
-height: auto;
-color: #999;
+    float: left;
+    clear: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    color: #999;
 }
 
 /* Reset and re style link of each child item */
 #nav_menu li:hover ul li a,
 #nav_menu ul li a
 {
-display: inline;
-padding: 0 6px 0 0;
-float: none;
-text-transform: lowercase;
-color: #999;
-background: none;
+    display: inline;
+    padding: 0 6px 0 0;
+    float: none;
+    text-transform: lowercase;
+    color: #999;
+    background: none;
 }
 
 #nav_menu li:hover ul li a:hover,
 #nav_menu ul li a:hover
 {
-background: none;
-color: #000;
+    background: none;
+    color: #000;
 }
-
