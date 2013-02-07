@@ -16,81 +16,87 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* YOUR STYLES HERE  */
-/* Navigation */
-#nav_menu {
+/* Navigation http://aext.net/2009/09/elegant-drop-menu-with-css-only/
+ */
+#nav_menu ul {
     list-style: none;
-    font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+    font-family: Verdana, Arial, Sans-Serif;
     margin: 0;
     padding: 0;
+    width: 80%;
     font-size: 1.2em;
+    float: left;
 }
 
 /* CSS for each Parent Item */
-#nav_menu li
+#nav_menu ul li
 {
-    clear: both;
     height: 2em;
+    position: relative;
+    background: #999;
+    float: left;
 }
 
-#nav_menu li a
+#nav_menu ul li.menu_item_1 a
 {
     float: left;
     display: block;
     padding: 4px;
     text-decoration: none;
-    color: #666;
+    background: #999;
+    color: #fff;
     text-transform: uppercase;
     margin-bottom: 5px;
     margin-right: 10px;
 }
 
 /* Change background color and font color of parent items when mouse hover */
-#nav_menu li:hover a,
-#nav_menu li a:hover
+#nav_menu ul li.menu_item_1:hover a,
+#nav_menu ul li.menu_item_1 a:hover
 {
     background: #999;
     color: #fff;
 }
 
-/* Applie to group of Child Items Each Child Item will be invisible by default */
-#nav_menu ul {display: none;}
+/* Apply to group of Child Items. Each Child Item will be invisible by default */
+#nav_menu ul li.menu_item_1 ul {display: none;}
 
 /* Each Child Item will be visible if mouse hover */
-#nav_menu li:hover ul {display: block;}
+#nav_menu ul li.menu_item_1:hover ul {display: block;}
 
-#nav_menu ul
+#nav_menu ul ul
 {
     list-style: none;
     float: left;
@@ -98,9 +104,9 @@ table {
     padding: 4px 8px;
 }
 
-#nav_menu ul li
+#nav_menu ul ul li
 {
-    float: left;
+    float: none;
     clear: none;
     margin: 0;
     padding: 0;
@@ -110,8 +116,8 @@ table {
 }
 
 /* Reset and re style link of each child item */
-#nav_menu li:hover ul li a,
-#nav_menu ul li a
+#nav_menu ul li:hover ul li a,
+#nav_menu ul li.menu_item_1 ul li a
 {
     display: inline;
     padding: 0 6px 0 0;
@@ -121,8 +127,8 @@ table {
     background: none;
 }
 
-#nav_menu li:hover ul li a:hover,
-#nav_menu ul li a:hover
+#nav_menu ul li:hover ul li a:hover,
+#nav_menu ul ul li a:hover
 {
     background: none;
     color: #000;
