@@ -133,3 +133,11 @@ table {
     background: none;
     color: #000;
 }
+
+#game_box table, th, td
+{
+	background: none;
+	color: #000000;
+	border: 1px solid black;
+	padding: 8px;
+}

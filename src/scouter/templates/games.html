@@ -1,0 +1,40 @@
+{% extends "base.html"%}
+{% load url from future%}
+
+{% block title %} Home Crowd Baseball Analysis {% endblock title %}
+{% block page_description %} Scores and Summary for MLB games on Date {% endblock page_description %}
+{% block header_tags %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css" />
+    
+	
+{% endblock header_tags %}
+
+{% block body %}
+<table id='game_box'>
+	<tr>
+		<th>Teams</th>
+		<th>Record</th>
+		<th>1</th>
+		<th>2</th>
+		<th>3</th>
+		<th>4</th>
+		<th>5</th>
+		<th>6</th>
+		<th>7</th>
+		<th>8</th>
+		<th>9</th>
+		<th>Total</th>
+	</tr>
+	<tr>
+		<td>New York Mets</td>
+		<td>0-161</td>
+	</tr>
+	<tr>
+		<td>Philadelphia Phillies</td>
+		<td>161-0</td>
+	</tr>
+</table>
+
+{% endblock body %}
+
+
