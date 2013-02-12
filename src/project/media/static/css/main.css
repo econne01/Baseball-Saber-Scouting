@@ -141,3 +141,30 @@ table {
 	border: 1px solid black;
 	padding: 8px;
 }
+#game_box th
+{
+	text-align:left;
+}
+#game_table
+{
+	background: #9999;
+}
+#game_table ul.header
+{
+	width:485px;
+	float:left;
+	border:1px solid #000000;
+}
+#game_table ul.header li.time
+{
+	float:left;
+	list-style:none;
+	padding:5px 5px;
+	width:390px;
+}
+#game_table ul.header li.tv_name
+{
+	float:left;
+	padding:5px 5px;
+	width:25px;
+}
