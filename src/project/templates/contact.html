@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block title %} Saber Scout Contacts {% endblock title %}
+{% block page_description %} Saber Scout Contact Information {% endblock page_description %}
+
+{% block body %}
+    <p>For more information regarding the use and operation of this site, please contact:
+        <table>
+            <tr>
+                <th>Contact</th>
+                <th>Role</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Eric Connelly</td>
+                <td>Developer</td>
+                <td><a href="mailto:eric.connelly08@gmail.com">eric.connelly08@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>Jake Horenstein</td>
+                <td>Developer</td>
+                <td><a href="mailto:jacobhorensteing59@gmail.com">jacobhorenstein59@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>Jason Rose</td>
+                <td>Project Manager</td>
+                <td><a href="mailto:rosejasonb@gmail.com">rosejasonb@gmail.com</a></td>
+            </tr>
+        </table>
+    </p>
+{% endblock body %}

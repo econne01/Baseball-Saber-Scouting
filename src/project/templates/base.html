@@ -6,9 +6,21 @@
 	    <title>{% block title %}{% endblock title %}</title>
 	    <meta name="description" content="{% block page_description %}Baseball Analysis{% endblock page_description %}">
 	    
+	    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css" />
 	    {% block header_tags %}{% endblock header_tags %}
    	</head>
     <body>
+    	<div class="container">
+    	<h1>
+    	   {% block h1_header %}Baseball Saber Scouting{% endblock h1_header %}
+    	</h1>
+    	{% include "navbar.html" %}
     	{% block body %}{% endblock body %}
+    	</div>
+    	
+    	<script src="{{ STATIC_URL }}js/jquery.js"></script>
+        <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-dropdown.js"></script>
+        {% block include_scripts %}{% endblock include_scripts %}
     </body>
 </html>
