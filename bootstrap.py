@@ -1,3 +1,5 @@
+#!/System/Library/Frameworks/Python.framework/Versions/2.7/bin
+
 ##############################################################################
 #
 # Copyright (c) 2006 Zope Foundation and Contributors.

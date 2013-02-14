@@ -1,0 +1,69 @@
+{% extends "base.html"%}
+{% load url from future%}
+
+{% block title %} Home Crowd Baseball Analysis {% endblock title %}
+{% block page_description %} Scores and Summary for MLB games on Date {% endblock page_description %}
+{% block header_tags %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css" />
+    
+	
+{% endblock header_tags %}
+
+{% block body %}
+
+<div id='game_table'>
+	<ul class='header'>
+		<li class='time'>1:35 PM ET</li>
+		<li class='tv_name'>CSNPhilly</li>
+		<li class='tv_logo'></li>
+	</ul>
+</div>
+<br><br>
+
+<table id='game_box'>
+	<tr>
+		<th>Teams</th>
+		<th>Record</th>
+		<th>1</th>
+		<th>2</th>
+		<th>3</th>
+		<th>4</th>
+		<th>5</th>
+		<th>6</th>
+		<th>7</th>
+		<th>8</th>
+		<th>9</th>
+		<th>Total</th>
+	</tr>
+	<tr>
+		<td>New York Mets</td>
+		<td>0-161</td>
+		<td id='inning1_away'>0</td>
+		<td id='inning2_away'>0</td>
+		<td id='inning3_away'>0</td>
+		<td id='inning4_away'>0</td>
+		<td id='inning5_away'>0</td>
+		<td id='inning6_away'>0</td>
+		<td id='inning7_away'>0</td>
+		<td id='inning8_away'>0</td>
+		<td id='inning9_away'>0</td>
+		<td id='total_away'>0</td>
+	</tr>
+	<tr>
+		<td>Philadelphia Phillies</td>
+		<td>161-0</td>
+		<td id='inning1_home'>0</td>
+		<td id='inning2_home'>0</td>
+		<td id='inning3_home'>0</td>
+		<td id='inning4_home'>0</td>
+		<td id='inning5_home'>0</td>
+		<td id='inning6_home'>0</td>
+		<td id='inning7_home'>0</td>
+		<td id='inning8_home'>0</td>
+		<td id='inning9_home'>0</td>
+		<td id='total_home'>0</td>
+	</tr>
+</table>
+{% endblock body %}
+
+
