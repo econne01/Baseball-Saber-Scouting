@@ -4,22 +4,25 @@
 {% block title %} Home Crowd Baseball Analysis {% endblock title %}
 {% block page_description %} Scores and Summary for MLB games on Date {% endblock page_description %}
 {% block header_tags %}
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css" />
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" />
+    
 	
 {% endblock header_tags %}
 
 {% block body %}
-	<h1>
+	<div class="container">
+    <h1>
 		Baseball Saber Scouting
 	</h1>
 	<header>
-    	<nav id='nav_menu'>
-    	    <a href='#' title='homepage' id='logo'></a>
-    		<ul>
-    			<li class='menu_item_1'><a href='#'>Games</a></li>
-    			<li class='menu_item_1'><a href='#'>Players</a>
-    				<ul class='child-list'>
+		<nav id='nav_menu' class="navbar">
+    	    <a id='logo' class="brand" title='homepage' href='#'>Logo</a>
+    		<ul class="nav">
+    			<li class='active'><a href='#'>Games</a></li>
+    			<li class='dropdown'>
+    			    <a href='#' class="dropdown-toggle" data-toggle="dropdown">Players</a>
+    				<b class='caret'></b>
+    				<ul class='dropdown-menu'>
     					<li class='menu_item_2'><a href='#'>Batters</a></li>
     					<li class='menu_item_2'><a href='#'>Hitters</a></li>
     				</ul>
@@ -28,7 +31,8 @@
     		</ul>
     	</nav>
 	</header>
-	<div id='container'>
 	    
 	</div>
+    <script src="{{ STATIC_URL }}js/jquery.js"></script>
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-dropdown.js"></script>
 {% endblock body %}
