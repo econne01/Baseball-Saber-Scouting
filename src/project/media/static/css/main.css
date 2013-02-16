@@ -21,24 +21,67 @@ p {
 }
 #game_table
 {
+	display:table;
 	background: #9999;
+}
+#game_table ul
+{
+	width: 485px;
+	margin: 0px;
+	border:1px solid #000000;
+	padding: 2px 0px;
+}
+#game_table ul li
+{
+	list-style:none;
+	
 }
 #game_table ul.header
 {
-	width:485px;
+	display:table-header-group;
 	float:left;
-	border:1px solid #000000;
 }
 #game_table ul.header li.time
 {
 	float:left;
-	list-style:none;
-	padding:5px 5px;
 	width:390px;
+	padding: 0px 5px;
 }
 #game_table ul.header li.tv_name
 {
 	float:left;
-	padding:5px 5px;
 	width:25px;
+}
+#game_table ul.labels
+{
+	font-weight:bold;
+	float:left;
+}
+#game_table ul.labels li.team_name
+{
+	float:left;
+	width:27%;
+	text-align:left;
+	padding: 2px 5px;
+}
+#game_table ul.labels li.team_record
+{
+	float:left;
+	width:15%;
+	text-align:left;
+	padding: 2px 0px;
+}
+#game_table ul.labels li.inning_1, li.inning_2, li.inning_3, li.inning_4, li.inning_5, li.inning_6, li.inning_7, li.inning_8, li.inning_9
+{
+	float:left;
+	width:5%;
+	text-align:center;
+	padding: 2px 0px;
+}
+#game_table ul.labels li.score_total
+{
+	float:left;
+	width:10%;
+	text-align:center;
+	padding: 2px 0px;
 }
