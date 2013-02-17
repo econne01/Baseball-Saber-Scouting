@@ -12,7 +12,7 @@ p {
 {
 	background: none;
 	color: #000000;
-	border: 1px solid black;
+	border: 2px solid black;
 	padding: 8px;
 }
 #game_box th
@@ -34,7 +34,6 @@ p {
 #game_table ul li
 {
 	list-style:none;
-	
 }
 #game_table ul.header
 {
@@ -79,6 +78,71 @@ p {
 	padding: 2px 0px;
 }
 #game_table ul.labels li.score_total
+{
+	float:left;
+	width:10%;
+	text-align:center;
+	padding: 2px 0px;
+}
+#game_table ul.team_away
+{
+	float:left;
+	border-right:1px solid #000000;
+}
+#game_table ul.team_away li.away_name
+{
+	float:left;
+	width:27%;
+	text-align:left;
+	padding: 2px 5px;
+}
+#game_table ul.team_away li.away_record
+{
+	float:left;
+	width:15%;
+	text-align:left;
+	padding: 2px 0px;
+}
+#game_table ul.team_away li.away_inning1, li.away_inning2, li.away_inning3, li.away_inning4, li.away_inning5, li.away_inning6, li.away_inning7, li.away_inning8, li.away_inning9
+{
+	float:left;
+	width:5%;
+	text-align:center;
+	padding: 2px 0px;
+}
+#game_table ul.team_away li.away_total
+{
+	float:left;
+	width:10%;
+	text-align:center;
+	padding: 2px 0px;
+}
+#game_table ul.team_home
+{
+	float:left;
+}
+#game_table ul.team_home li.home_name
+{
+	float:left;
+	width:27%;
+	text-align:left;
+	padding: 2px 5px;
+}
+#game_table ul.team_home li.home_record
+{
+	float:left;
+	width:15%;
+	text-align:left;
+	padding: 2px 0px;
+}
+#game_table ul.team_home li.home_inning1, li.home_inning2, li.home_inning3, li.home_inning4, li.home_inning5, li.home_inning6, li.home_inning7, li.home_inning8, li.home_inning9
+{
+	float:left;
+	width:5%;
+	text-align:center;
+	padding: 2px 0px;
+}
+#game_table ul.team_home li.home_total
 {
 	float:left;
 	width:10%;
