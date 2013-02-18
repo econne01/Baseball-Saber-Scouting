@@ -1,0 +1,41 @@
+{% extends "base.html"%}
+{% load url from future%}
+
+{% block title %} Home Crowd Baseball Analysis {% endblock title %}
+{% block page_description %} Offensive Player Details {% endblock page_description %}
+{% block header_tags %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css" />
+{% endblock header_tags %}
+
+{% block h1_header %}Player Details{% endblock h1_header %}
+{% block body %}
+<div>
+	<table id='player_summary'>
+		<tr>
+		    <th>Season</th>
+		    <th>Team</th>
+		    <th>Games</th>
+		    <th>PA</th>
+		    <th>WAR</th>
+		    <th>wRC+</th>
+		</tr>
+        <tr>
+            <td>2011</td>
+            <td>Phillies</td>
+            <td>152</td>
+            <td>644</td>
+            <td>1.7</td>
+            <td>124</td>
+        </tr>
+        <tr>
+            <td>2012</td>
+            <td>Phillies</td>
+            <td>71</td>
+            <td>292</td>
+            <td>-1.0</td>
+            <td>87</td>
+        </tr>
+	</table>
+{% endblock body %}
+
+
