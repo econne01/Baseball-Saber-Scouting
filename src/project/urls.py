@@ -10,5 +10,5 @@ urlpatterns = patterns('',
     url(r'^$', 'scouter.views.index', name='index'),
     url(r'^contact$', 'scouter.views.contact', name='contact'),
     url(r'^games$', 'scouter.views.games', name='games'),
-    url(r'^batter$', BatterDetail.as_view(template_name='batter_detail.html'), name='games'),
+    url(r'^batter/(?P<pk>\d+)$', BatterDetail.as_view(template_name='batter_detail.html'), name='games'),
 )
